@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.2js</title>
+</head>
+<body>
+    <script>
+        let gradeInNumber = prompt('insert grade in uppercase letter');
+        if(gradeInNumber === 'F'){
+            gradeInNumber = '0-64';
+        }
+        else if(gradeInNumber === 'D'){
+            gradeInNumber = '65-69';
+        }
+        else if(gradeInNumber === 'C'){
+            gradeInNumber = '70-79';
+        }
+        else if(gradeInNumber === 'B'){
+            gradeInNumber = '80-89';
+        }
+        else if(gradeInNumber === 'A'){
+            gradeInNumber = '90-100';
+        } else {
+            window.alert("invalid input")
+        }
+        console.log(gradeInNumber);
+        
+        let gradeInLetter = Number(prompt('insert grade in number'));
+        if(gradeInLetter>=0 && gradeInLetter<=64){
+            gradeInLetter = 'F';
+        }
+        else if(gradeInLetter>=65 && gradeInLetter<=69){
+            gradeInLetter = 'D';
+        }
+        else if(gradeInLetter>=70 && gradeInLetter<=79){
+            gradeInLetter = 'C';
+        }
+        else if(gradeInLetter>=80 && gradeInLetter<=89){
+            gradeInLetter = 'B';
+        }
+        else if(gradeInLetter>=90 && gradeInLetter<=100){
+            gradeInLetter = 'A';
+        }
+         else {
+            window.alert("invalid input")
+        }
+        console.log(gradeInLetter);
+
+    </script>
+    
+</body>
+</html>

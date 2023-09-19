@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9.3js</title>
+</head>
+<body>
+    <script>
+        let num = Math.floor(Math.random() * 51);
+        console.log(num);
+        let guess;
+        while(guess !== num){
+            guess = Number(prompt('guess a number between 0 to 50'));
+            if(guess<num){
+                window.alert('guess was too low');
+            }
+            if(guess>num){
+                window.alert('guess was too high');
+            }
+        }
+        window.alert('correct!!!')
+
+    </script>
+</body>
+</html>

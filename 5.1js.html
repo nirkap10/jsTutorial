@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const language = prompt('language');
+        const isIsland = prompt('IsIsland') === 'true';
+        const population = parseInt(prompt('population'));
+        const country = prompt('country');
+
+        if(language === 'english' && population < 50 && !isIsland){
+            console.log('you  should live in ' + country);
+        }  else{
+            console.log(country + ' does not meet your criteria')
+        }
+    </script>
+</body>
+</html>

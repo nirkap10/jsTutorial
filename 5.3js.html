@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function passwordcheckIfElse(n){
+        if(n.length>7){
+            console.log('strong');
+        } else{
+            console.log('weak');
+        }  
+    }
+    function passwordcheckTernary(n){
+        n.length > 7 ? console.log('strong') : console.log('weak');
+    }
+    function passwordcheckAndOpertaor(n){
+        if(n.length>7 && n.length===7){
+            console.log('strong');
+        } else{
+            console.log('weak');
+        }  
+    }
+    function passwordcheck(n){
+        let score = 0
+        n.length > 7 ? score += 1 : null;
+        n.length < 7 ? score = -1 : null;
+        /[A-Z]/.test(n) ? score += 1 : null;
+        score === 2 ? console.log('very strong') : null;   
+        score === 1 ? console.log('strong') : null;   
+        score <= 0 ? console.log('weak') : null;   
+    }
+    let password = prompt('Enter your password');
+    passwordcheck(password);
+    </script>
+</body>
+</html>
