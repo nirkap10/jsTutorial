@@ -1,1 +1,2 @@
 # jsTutorial
+# jsFirstWeekendAssignment
